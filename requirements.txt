@@ -1,0 +1,15 @@
+# BayesDataPoisoningToolkit -- Python dependencies
+# Install:  pip install -r requirements.txt
+#
+# pandas / numpy / scikit-learn  -> used by both tools.
+# nltk                           -> required ONLY by poison.py (the HTB lab
+#                                   build); its validator imports the lab's
+#                                   nltk-based preprocessing pipeline.
+#
+# After installing, poison.py's validator also needs the NLTK data packages:
+#   python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); nltk.download('punkt_tab')"
+
+pandas>=1.3
+numpy>=1.21
+scikit-learn>=1.0
+nltk>=3.6
